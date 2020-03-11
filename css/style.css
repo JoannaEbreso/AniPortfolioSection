@@ -7,9 +7,12 @@ body {
     font-family: 'Reem Kufi', sans-serif;
     overflow-x: hidden; 
 }
+.none{
+    display: none;
+}
 
 
-.container{
+.container-section{
     max-width: 1500px;
     padding: 1rem;
     margin: 0 auto;
@@ -87,21 +90,7 @@ body {
     padding: .9rem;
     font-size: 14px;
 }
-.flex{
-    display: flex;
-    flex-grow: wrap;
-    flex: 0 50%;
-}
-.flex-row{
-    flex-direction: row;
-}
 
-.space-evenly{
-    justify-content: space-evenly;
-}
-.space-between{
-    justify-content: space-between;
-}
 .align-items{
     align-items: center;
 }
@@ -111,7 +100,7 @@ body {
 
 .radius-rectangle{
     width: auto;
-    height: 180px;
+    height: 220px;
     background: rgb(201, 149, 149);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: .7rem 2rem;
@@ -131,7 +120,7 @@ body {
 }
 .square{
     max-width: 21.75rem;
-    height: 17.26rem;
+    height: 19.5rem;
     background: rgb(201, 149, 149);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: .7rem 2rem;
@@ -139,7 +128,7 @@ body {
 }
 .rectangle{
     width: auto;
-    height: 180px;   /* convert to rem */ 
+    height: 220px;   /* convert to rem */ 
     background: rgb(201, 149, 149);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: .7rem 2rem;
@@ -156,7 +145,7 @@ body {
 }
 .square-image{
     max-width: 22rem;
-    height: 12.5rem;
+    height: 14.5rem;
 }
 .portfolio-details{
     position: absolute;
@@ -187,8 +176,70 @@ body {
     background: #A01835;
     /* border: .8px solid #FFFFFF; */
 }
-@media(max-width:1000px){
+@media(min-width:1500px){
     .flex{
-        flex-grow: 2;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex>div{
+        flex:0 30% ;
+    }
+    .flex-row{
+        flex-direction: row;
+    }
+    
+    .space-evenly{
+        justify-content: space-evenly;
+    }
+    .space-between{
+        justify-content: space-between;
+    }
+    .screen-greater-1500-mt-6{
+        margin-top: -4rem !important;
+        margin-bottom: 2rem;
+    }
+}
+@media(min-width:1200px) and (max-width:1449px){
+    .flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .flex>div{
+        flex:0 10% ;
+    }
+    .flex-row{
+        flex-direction: row;
+    }
+    
+    .space-evenly{
+        justify-content: space-evenly;
+    }
+    .space-between{
+        justify-content: space-evenly;
+    }
+    .width-60{
+        width:30%;
+    }
+    .square-3{
+        order: 3;
+    }
+    .square-6{
+        order: 6;
+    }
+    .rectangle{
+        width: auto;
+        height: 254px;   /* convert to rem */ 
+        
+    }
+    .radius-rectangle{
+        width: auto;
+        height: 254px;
+        
+    }
+    .margin-negative-top-6{
+        margin-top: 0;
+    }
+    .screen-1500-1200-mt-3{
+        margin-top: 2rem;
     }
 }
