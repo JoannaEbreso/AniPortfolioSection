@@ -7,7 +7,7 @@ body {
     font-family: 'Reem Kufi', sans-serif;
     overflow-x: hidden; 
 }
-.none{
+.none-portfolio{
     display: none;
 }
 
@@ -155,7 +155,7 @@ body {
     width:-webkit-fill-available;
     font-size: 13px;
     text-align: center;
-    background: rgba(24, 24, 24, 0.7);
+    background: rgba(24, 24, 24, 0.86);
     color: #FFFFFF;
 }
 .portfolio-details p{
